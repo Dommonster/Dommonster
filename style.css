@@ -1,0 +1,36 @@
+.navbar {  /* нав бар */
+background: #006786;
+font-size: 150%;
+color:#ffffff;
+}
+
+.navbar-brand{
+	font-size: 300%;
+	color:#ffffff;
+	margin-left: 320px;
+}
+
+
+
+body{
+
+}
+.glav{
+	text-align: center;
+}
+
+.center{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 20pt
+}
+.col-3{
+	text-align: justify;
+}
+.navbar-text{
+	margin-left: 720px;
+}
+.col-6{
+	text-align: center;
+}
