@@ -1,14 +1,17 @@
 .navbar {  /* нав бар */
-background: #006786;
-font-size: 150%;
-color:#ffffff;
+background: #f1eff1;
+
 }
 
-
+#carisel{
+	background-image: url(fon.jpg);
+}
 
 
 body{
 
+background: url(back2.jpg) no-repeat center center fixed;
+background-size: cover;
 }
 .glav{
 	text-align: center;
@@ -18,14 +21,82 @@ body{
 	text-align: center;
 	margin-top: 50px;
 	margin-bottom: 50px;
-	font-size: 20pt
+	font-size: 20pt;
+	color: white
 }
+
+
+
+#cent{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	font-size: 20pt;
+	color: white
+}
+
+#crosh{
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+	
+}
+#one{
+	font-size: 10pt;
+	color: white
+}
+
+#two{
+	font-size: 10pt;
+	color: #2a4679
+}
+
 .col-3{
 	text-align: justify;
 }
-.navbar-text{
-	margin-left: 720px;
+
+.scrollbar {
+	background-color: #9dc8e8
+	background-position: 25% 75%;
 }
-.col-6{
+.bar{
+	padding-top: 70px
+}
+
+#onas{
+	font-size: 15pt;
 	text-align: center;
+	color: white;
+
+}
+#scrollspyHeading4{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 20pt;
+	background-color: #e8e4e8;
+	background-size: contain;
+	color: black;
+}
+#calc{
+	background-color: #f1eff1;
+	background-size: contain;
+	
+}
+#nepos{
+	width: 580px;
+}
+#plus{
+width: 580px;
+}
+
+#calchead{
+	background-color: #9dc8e8;
+	border-bottom: 5px;
+	border-top:  5px;
+	border-left: 5px;
+	border-right: 20px;
+	border-color: black;
+
 }
