@@ -57,13 +57,13 @@
 							<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 								<div class="carousel-inner">
 									<div class="carousel-item active">
-										<img src="gas1.jpg" class="d-block w-100" alt="СУП">
+										<img src="gas5.jpg" class="d-block w-100" alt="СУП">
 									</div>
 									<div class="carousel-item">
 										<img src="gas4.jpg" class="d-block w-100" alt="газ">
 									</div>
 									<div class="carousel-item">
-										<img src="gas5.jpg" class="d-block w-100" alt="авто">
+										<img src="gas1.jpg" class="d-block w-100" alt="авто">
 									</div>
 									<div class="carousel-item">
 										<img src="gas4.jpg" class="d-block w-100" alt="скидка">
@@ -112,8 +112,8 @@
 		<p>		
 			
 				<div class="container">
-				    <div class="grid">
-				      <div class="g-col-6" id="plus">
+				    
+				      <div id="plus">
 					  <table class="table">
 						<tr> <th> <img src="check.svg" height="35px" width="35px"> Экономия денежных средств на запрвку автомобиля до 75%!</th></tr>
 						<tr><th><img src="check.svg" height="35px" width="35px"> Автомобиль, оборудованный газом, может использоваться, как на бензине, так и на газу!</th></tr>
@@ -123,7 +123,7 @@
 					  </table>
 				      </div>
 
-				      <div class="g-col-6" id="nepos">
+				      <div id="nepos">
 					<div class="card">
 						<h5 class="card-header" id="calchead">Калькулятор выгоды</h5>
 						<div class="card-body">
@@ -149,12 +149,12 @@
 										<div class="row">
 											<th scope="col">
 												<div class="col-sm">
-													<input type="number" name="num" min="1"> руб.
+													<input type="number" name="num" min="1" id="gbo" value="0"> руб.
 												</div>
 											</th>
 											<th scope="col">
 												<div class="col-sm">
-													<input type="number" name="num" min="1"> руб.
+													<input type="number" name="num" min="1" id="benz" value="0"> руб.
 												</div>
 											</th>
 
@@ -182,12 +182,12 @@
 										<div class="row">
 											<th scope="col">
 												<div class="col-sm">
-													<input type="number" name="num" min="1"> км.
+													<input type="number" name="num" min="1" id="probeg" value="0"> км.
 												</div>
 											</th>
 											<th scope="col">
 												<div class="col-sm">
-													<input type="number" name="num" min="1"> руб.
+													<input type="number" name="num" min="1" id="gas" value="0"> руб.
 												</div>
 											</th>
 										</div>
@@ -203,7 +203,7 @@
 											</th>
 											<th scope="col">
 												<div class="col-sm">
-													Одна из трёх колонок
+													
 												</div>
 											</th>
 										</div>
@@ -214,16 +214,24 @@
 										<div class="row">
 											<th scope="col">
 												<div class="col-sm">
-													<input type="number" name="num" min="1"> л/100км.
+													<input type="number" name="num" min="1" id="rashod" value="0"> л/100км.
 												</div>
 											</th>
 											<th scope="col">
 												<div class="col-sm">
-													Одна из трёх колонок
+													
 												</div>
 											</th>
 										</div>
 									</div>
+								</tr>
+								<tr>
+									<th>
+										<button type="button" class="btn" id="calcbtn" onclick="calcul()">Посчитать</button>
+									</th>
+									<th>
+										Окупится за <output id="outcalc">__</output> месяцев
+									</th>
 								</tr>
 						
 						</table>
@@ -238,7 +246,17 @@
 
 
 	<script type="text/javascript"> 
-
+		function calcul(){
+			var result;
+			var gbo = Number(document.getElementById("gbo").value);
+			var benz = Number(document.getElementById("benz").value);
+			var probeg = Number(document.getElementById("probeg").value);
+			var gas = Number(document.getElementById("gas").value);
+			var rashod = Number(document.getElementById("rashod").value);
+			result = gbo  / (((rashod*benz/100)-(rashod*gas/100))*probeg);
+			result = Math.trunc(result);
+			document.getElementById("outcalc").innerHTML = result;
+		}
 	</script>
 
 	<!-- Дополнительный JavaScript; выберите один из двух! -->
