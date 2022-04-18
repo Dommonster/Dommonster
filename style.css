@@ -1,7 +1,12 @@
 .navbar {  /* нав бар */
-background: #f1eff1;
-
+background: #4884b1;
 }
+
+#navtext{
+color: white;
+font-size: 20px
+}
+
 
 #carisel{
 	background-image: url(fon.jpg);
@@ -10,7 +15,7 @@ background: #f1eff1;
 
 body{
 
-background: url(back2.jpg) no-repeat center center fixed;
+background: url(gass2.jpg) no-repeat center center fixed;
 background-size: cover;
 }
 .glav{
@@ -49,7 +54,7 @@ background-size: cover;
 
 #two{
 	font-size: 10pt;
-	color: #2a4679
+	color: black
 }
 
 .col-3{
@@ -72,16 +77,18 @@ background-size: cover;
 }
 #scrollspyHeading4{
 	text-align: center;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-top: 0px;
+	margin-bottom: 10px;
 	font-size: 20pt;
-	background-color: #e8e4e8;
+	background-color: #4884b1;
 	background-size: contain;
-	color: black;
+	color: white;
 }
 #calc{
 	background-color: #f1eff1;
 	background-size: contain;
+	margin-top: 50px;
+	margin-bottom: 50px;
 	
 }
 #nepos{
@@ -92,15 +99,18 @@ width: 580px;
 }
 
 #calchead{
-	background-color: #9dc8e8;
+	background-color: #4884b1;
 	border-bottom: 5px;
 	border-top:  5px;
 	border-left: 5px;
 	border-right: 20px;
 	border-color: black;
 	text-align: center;
+	color: white;
+
 
 }
+
 
 #calcbtn{
 	background-color: #9dc8e8;
